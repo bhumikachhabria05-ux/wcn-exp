@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tiya HTML Blog - Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <style>
+        body {
+            background-color: #f8d7da;
+        }
+        h1, h2, h3 {
+            color: #3c3c90;
+        }
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Hospital Management By Tiya Nathwani</h1>
+            <p>This Hospital Management system consists of HTML + Bootstrap features.</p>
+            <em>Written and updated by Tiya Nathwani</em>
+        </div>
+
+
+        <h3>Hyperlinks in HTML:</h3>
+        <p><a href="https://www.pristyncare.com" class="btn btn-info" target="_blank">Visit Hospital.com</a></p>
+
+
+        <h3>Formatting:</h3>
+        <p>This is a <strong>strong</strong> text.</p>
+        <p>This is an <u>underlined</u> text.</p>
+
+
+        <h2>Our Hospital Building</h2>
+        <img src="hospital.jpg" alt="City Care Hospital" class="img-responsive img-thumbnail" width="500">
+
+
+        <h2>Our Mission</h2>
+        <p><strong>To provide quality healthcare</strong> with compassion and <em>dedication</em> to all.</p>
+
+
+        <h2>Doctor's Schedule</h2>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr class="info">
+                    <th>Doctor Name</th>
+                    <th>Specialization</th>
+                    <th>Timings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr. Asha Mehta</td>
+                    <td>Cardiologist</td>
+                    <td>10 AM - 1 PM</td>
+                </tr>
+                <tr>
+                    <td>Dr. Rahul Sharma</td>
+                    <td>Orthopedic</td>
+                    <td>2 PM - 5 PM</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Facilities Available:</h3>
+        <ul class="list-group">
+            <li class="list-group-item">24/7 Emergency Service</li>
+            <li class="list-group-item">Ambulance</li>
+            <li class="list-group-item">Pharmacy</li>
+            <li class="list-group-item">ICU and Wards</li>
+        </ul>
+
+
+        <h2>Departments</h2>
+        <ol class="list-group">
+            <li class="list-group-item">Cardiology</li>
+            <li class="list-group-item">Neurology</li>
+            <li class="list-group-item">Orthopedics</li>
+            <li class="list-group-item">Pediatrics</li>
+        </ol>
+
+
+        <h3>Forms in HTML:</h3>
+        <h2>Patient Registration Form</h2>
+        <div class="form-section">
+            <form method="post">
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" class="form-control" name="fullname">
+                </div>
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="number" class="form-control" name="age">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label><br>
+                    <label class="radio-inline"><input type="radio" name="gender" value="male"> Male</label>
+                    <label class="radio-inline"><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input type="text" class="form-control" name="phone">
+                </div>
+                <div class="form-group">
+                    <label>Department:</label>
+                    <select name="department" class="form-control">
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+
+
+        <h3>Multimedia in HTML:</h3>
+        <h2>Health Awareness Audio</h2>
+        <audio controls class="well">
+            <source src="health_tips.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <h2>Hospital Tour Video</h2>
+        <video width="500" height="300" controls class="well">
+            <source src="hospital_tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <h2>Hospital Branches Map</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://maps.google.com" width="100%" height="300" class="embed-responsive-item"></iframe>
+        </div>
+    </div>
+</body>
+</html>
