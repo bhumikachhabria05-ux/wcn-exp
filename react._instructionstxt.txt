@@ -1,0 +1,8 @@
+1. npx create-react-app  exp
+2. edit app.js
+app.js mai pura code neeche wala
+npm install krna
+3. npm start
+4.agar error arha toh error mein jo module not found arha na usko npm instasll marna
+npm install react-dom
+for eg idhar react-dom error de rha tha toh
